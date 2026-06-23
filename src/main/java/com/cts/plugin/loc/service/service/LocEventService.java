@@ -327,6 +327,8 @@ public class LocEventService {
                 .totalFilesUpdated(event.getTotalFilesUpdated())
                 .totalFilesAdded(event.getTotalFilesAdded())
                 .totalFilesDeleted(event.getTotalFilesDeleted())
+                .inputTokens(event.getInputTokens())
+                .outputTokens(event.getOutputTokens())
                 .createdAt(event.getCreatedAt())
                 .updatedAt(event.getUpdatedAt())
                 .humanLocPercent(event.getHumanLocPercent())

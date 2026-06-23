@@ -102,6 +102,14 @@ public class LocEventRequest {
     @PositiveOrZero
     private int totalFilesDeleted;
 
+    /** Number of input (prompt) tokens consumed by the LLM for this event. */
+    @PositiveOrZero
+    private Integer inputTokens;
+
+    /** Number of output (completion) tokens produced by the LLM for this event. */
+    @PositiveOrZero
+    private Integer outputTokens;
+
     /**
      * Percentage of lines in this event that were written by a human (not GenAI).
      * Optional, may be null if not set by the user/plugin.

@@ -49,6 +49,10 @@ public class LocEventResponse {
     private int totalFilesAdded;
     /** Total number of files deleted in this event. */
     private int totalFilesDeleted;
+    /** Number of input (prompt) tokens consumed by the LLM for this event. */
+    private Integer inputTokens;
+    /** Number of output (completion) tokens produced by the LLM for this event. */
+    private Integer outputTokens;
     private Instant createdAt;
     private Instant updatedAt;
 

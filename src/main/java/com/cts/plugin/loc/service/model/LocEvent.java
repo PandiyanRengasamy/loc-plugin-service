@@ -150,6 +150,14 @@ public class LocEvent {
     @Field("totalFilesDeleted")
     private int totalFilesDeleted;
 
+    /** Number of input (prompt) tokens consumed by the LLM for this event. */
+    @Field("inputTokens")
+    private Integer inputTokens;
+
+    /** Number of output (completion) tokens produced by the LLM for this event. */
+    @Field("outputTokens")
+    private Integer outputTokens;
+
     /** Server-side record creation time (auto-set by MongoDB auditing). */
     @CreatedDate
     @Field("createdAt")
